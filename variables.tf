@@ -13,7 +13,7 @@ variable "subnet_cidr" {
   type        = map(string)
 
   default = {
-#     be1 = "10.0.0.0/24"
+     be1 = "10.0.0.0/24"
     be2 = "10.0.1.0/24"
     fe1 = "10.0.2.0/24"
     fe2 = "10.0.3.0/24"
@@ -35,11 +35,11 @@ variable "enable_classiclink" {
   type        = bool
   default     = false
 }
-# variable "public_1_ip" {
-#   description = "A1 || bool var ip subnet1"
-#   type        = bool
-#   default     = false
-# }
+variable "public_1_ip" {
+  description = "A1 || bool var ip subnet1"
+  type        = bool
+  default     = false
+}
 variable "public_2_ip" {
   description = "A1 || bool var ip subnet2"
   type        = bool
